@@ -1,1 +1,1 @@
-# Some starter list ideas for music data visualizations
+# List ideas for Visualizations
