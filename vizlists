@@ -1,0 +1,31 @@
+
+# Starter Formatting Examples for music data list comprehension and visualization:
+
+# top digital service providers by subscribers
+DSP = {'Apple': 36000000,
+       'Spotify': 24000000,
+       'Amazon': 22000000,
+       'YouTube': 10000000,
+       'Deezer': 2000000}
+
+top_subscribers = [(k, v) for k, v in DSP.items() if v >= 20000000]
+
+print(top_subscribers)
+
+
+# top artist by stream counts across all DSPs
+Artist = {'Cardib': 12345000,
+          'Taylor': 12346000,
+          'Blake': 12347000}
+
+top_artist = [(k, v) for k, v in Artist.items() if v >= 12346000]
+
+print(top_artist)
+
+# top Track by percentages across all DSPs
+Track = {'CB4': .33,
+         'TS3': .24,
+         'BS6': .23}
+top_track_stream = [(k, v) for k, v in Track.items() if v >= .25]
+
+print(top_track_stream)
